@@ -1,0 +1,13 @@
+# Python cache/virtual env
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Poetry/Virtualenv
+poetry.lock
+/home/sak/.cache/pypoetry/  # (Poetry’s envs; although our env is outside project by default)
+
+# VSCode settings
+.vscode/
+

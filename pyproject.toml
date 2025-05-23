@@ -1,0 +1,22 @@
+[project]
+name = "spidey"
+version = "0.1.0"
+description = "webscraper"
+authors = [
+    {name = "sak-0",email = "saksham@cloudtechservice.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "scrapy (>=2.13.0,<3.0.0)",
+    "scrapy-selenium (>=0.0.7,<0.0.8)",
+    "requests (>=2.32.3,<3.0.0)",
+    "beautifulsoup4 (>=4.13.4,<5.0.0)",
+    "mysql-connector-python (>=9.3.0,<10.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
