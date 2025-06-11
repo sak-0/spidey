@@ -6,7 +6,12 @@
 import scrapy
 
 
-class SpideyItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
+class RepItem(scrapy.Item):
+    name = scrapy.Field()
+    email = scrapy.Field()
+    phone = scrapy.Field()
+    ssn = scrapy.Field()
+    rep_id = scrapy.Field()
+    upline_rep = scrapy.Field()
+    downline_rep = scrapy.Field()
     pass
