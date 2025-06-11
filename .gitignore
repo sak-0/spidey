@@ -3,7 +3,9 @@ __pycache__/
 *.py[cod]
 .venv/
 .env
-reps_output.json
+
+output/*
+!output/.gitkeep
 
 # Poetry/Virtualenv
 poetry.lock
@@ -12,3 +14,8 @@ poetry.lock
 # VSCode settings
 .vscode/
 
+*.log
+*.sqlite
+*.db
+*.csv
+*.tmp
