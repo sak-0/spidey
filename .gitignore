@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 .venv/
 .env
+reps_output.json
 
 # Poetry/Virtualenv
 poetry.lock
