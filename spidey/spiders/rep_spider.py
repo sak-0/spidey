@@ -8,7 +8,14 @@ class RepSpider(scrapy.Spider):
     start_urls = ["https://qa-reps.corenroll.com/login"]
     custom_settings = {
         "DOWNLOAD_DELAY": 2,
+        "FEEDS": {
+            'output/reps_output.json': {
+                'format': 'json',
+                'overwrite': True
+            }
+        }
     }
+
 
     async def start(self):
         yield SeleniumRequest(
