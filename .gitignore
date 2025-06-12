@@ -4,6 +4,9 @@ __pycache__/
 .venv/
 .env
 
+output/*
+!output/.gitkeep
+
 # Poetry/Virtualenv
 poetry.lock
 /home/sak/.cache/pypoetry/  # (Poetry’s envs; although our env is outside project by default)
@@ -11,3 +14,8 @@ poetry.lock
 # VSCode settings
 .vscode/
 
+*.log
+*.sqlite
+*.db
+*.csv
+*.tmp
