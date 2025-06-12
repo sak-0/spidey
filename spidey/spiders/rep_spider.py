@@ -1,15 +1,17 @@
 import scrapy
+import datetime
 from scrapy_selenium import SeleniumRequest
 from bs4 import BeautifulSoup
 from spidey.items import RepItem
 
 class RepSpider(scrapy.Spider):
     name = "rep_spider"
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H-%M")
     start_urls = ["https://qa-reps.corenroll.com/login"]
     custom_settings = {
         "DOWNLOAD_DELAY": 2,
         "FEEDS": {
-            'output/reps_output.json': {
+            f"output/reps_{timestamp}.json": {
                 'format': 'json',
                 'overwrite': True
             }
